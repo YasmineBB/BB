@@ -9,50 +9,83 @@
 }
 
 body {
-    font-weight: 200;
     color: #363537;
     font-family: Roboto;
 
 }
 
-h1 {
+h1,
+h2 {
     font-family: Marcellus;
     color: #363537;
+    font-size: 75px;
 }
 
 #logo {
     padding: 15px;
     font-size: 75px;
     margin: 10px;
-    background-color: #DCED31;
 }
 
-#menu {
-    font-family: Roboto;
-    font-size: 120%;
-    font-weight: bold;
-    letter-spacing: 5px;
-    margin-right: 25px;
-    padding: 10px 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-#menu li {
-    list-style-type: none;
-    margin: 0 10px 10px 10px;
-    display: inline;
-    letter-spacing: 2px;
-}
 
 /* Hero image */
 
 #hero-image {
     height: 500px;
-    width: 100%;
-    background: url('../assets/images/violet.jpeg');
+    margin: 10px;
+    background: url('../assets/images/violet-rain.jpeg');
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    transition: transform 1s;
+}
+
+#hero-image:hover {}
+
+.view-gallery {
+    margin: auto;
+    text-align: center;
+    margin: 3rem;
+    padding: 5rem;
+    transition: transform 1s;
+}
+
+.view-contact {
+    margin: auto;
+    text-align: center;
+    margin: 2rem;
+    padding: 5rem;
+    transition: transform 1s;
+}
+
+.view-gallery:hover {
+    transform: scale(1.2);
+    font-size: 100px;
+}
+
+.view-contact:hover {
+    transform: scale(1.2);
+    font-size: 100px;
+}
+
+.social-media-container {
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    color: lawngreen;
+
+}
+
+.social-media-container li {
+    padding: 30px;
+}
+
+.fab {
+    color: rgb(191, 15, 235);
+    border: 2px solid #363537;
+    border-radius: 50%;
+    padding: 10px;
 }
